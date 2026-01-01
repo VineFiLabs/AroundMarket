@@ -1,0 +1,29 @@
+{
+  "5003": {
+    "network": "mantle_testnet",
+    "USDC": "0xdFb9d901a28AAeb1b3Ecc59B87A2040Ec41c6564",
+    "AroundPoolFactory": "0x74EEfcFE79442F13c07dE07A6D48E74f327B3bB8",
+    "AroundMarket": "0x8f89e70c1CA5CdD2898FbE243EA9652929B1Ea3a",
+    "EchoOptimisticOracle": "0x50aed15a6CdF48037567df6C5e98692Cc10fFD74",
+    "AroundRouter": "0x0Ec7d4090cd375042FC48d30Ee6157Ff901af0Cb",
+    "AroundUIHelper": "0xF54923e5411d2ddA59349bA42802964D58e0dDCa"
+  },
+  "31337": {
+    "network": "hardhat",
+    "USDC": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "AroundPoolFactory": "0x771e577792675623F5E6436a55461b504853e988",
+    "AroundMarket": "0xDa1A065ebd690AB0C134746DF459BdBf4dcFDE8E",
+    "EchoOptimisticOracle": "0xEf63612dD69de2fdA6833E318A83210119415820",
+    "AroundRouter": "0x4E41ab0DEcBDE1ee2Cb8fcFB5647e4Fd86D094e0",
+    "AroundUIHelper": "0x60d1Ef1537c99dCC227170945549f3EbBe598fdF"
+  },
+  "421614": {
+    "network": "arb_sepolia",
+    "USDC": "0xB77a8A32e43E2b5d4a907E0C7d8a1BFa1f712910",
+    "AroundPoolFactory": "0xe3f65854Bbe157215755Ea0a8bd0Ec415da4368b",
+    "AroundMarket": "0x1B25D472ec688fF3311A28606aE111b4852EE9C5",
+    "EchoOptimisticOracle": "0xe1f0ACa6048c441c835Fc353E7eb29F21EBA987a",
+    "AroundRouter": "0xe326d9835bE7ECb314f64DE5aCe75B123B412F04",
+    "AroundUIHelper": "0xd9E6212648Bf565141d502638F108Cd47A0D1FA5"
+  }
+}
