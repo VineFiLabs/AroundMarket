@@ -6,33 +6,33 @@ Around is a blockchain-based decentralized prediction market platform that allow
 
 ## Core Features
 
-### 1. Prediction Market Functionality
+### 1. 🏛️ Prediction Market Functionality
 - **Market Creation**: Users can create various types of prediction markets
 - **Bidirectional Trading**: Supports Yes/No predictions and trading in both directions
 - **Real-time Pricing**: Dynamic price discovery mechanism based on AMM model
 - **Liquidity Provision**: Users can add liquidity and earn trading fees
 
-### 2. Self-Yielding Mechanism
+### 2. 🔄 Self-Yielding Mechanism
 - **Aave Integration**: Pools can optionally deposit funds into the Aave protocol
 - **Auto-compounding**: Yields from Aave are automatically reinvested into the pool
 - **Flexible Configuration**: Each market can independently configure whether to enable Aave yields
 
-### 3. Decentralized Oracle
+### 3. ⚖️ Decentralized Oracle
 - **Optimistic Oracle**: Uses EchoOptimisticOracle for result determination
 - **Multiple Data Sources**: Supports multiple data providers submitting results
 - **Dispute Mechanism**: Includes challenge and dispute voting mechanisms to ensure result accuracy
 - **Incentive Mechanism**: Data providers who submit correct results receive rewards
 
-### 4. Reward Mechanism
+### 4. 🎰 Reward Mechanism
 - **Lucky Pool (LuckyPool)**: Users who reach the trading volume threshold can participate in a lottery
 - **Creator Rewards**: Market creators receive a portion of trading fees
 - **NFT Discounts**: Users holding ELF NFTs enjoy 50% fee discounts
 
-### 5. Risk Management
+### 5. 🛡️ Risk Management
 - **Multi-signature Management**: Critical operations require multi-signature confirmation
 - **Invalid Market Mechanism**: Supports marking invalid markets as InvalidMarket
 
-## System Architecture
+## 🏗️ System Architecture
 
 ### Core Contracts
 
@@ -113,7 +113,7 @@ Lottery pool contract responsible for:
 
 Frontend helper contract providing batch query functionality to optimize frontend data retrieval.
 
-## Pricing Mechanism
+## 📊 Pricing Mechanism
 
 ### Virtual Liquidity AMM Model
 
@@ -136,15 +136,15 @@ Virtual liquidity provides initial price discovery capability, ensuring markets 
 Total fee rate: Default 0.6% (600/100000)
 
 Fee distribution:
-- **Official Fee**: 2% (200/100000) - To platform
-- **Liquidity Fee**: 1.5% (150/100000) - To liquidity providers
-- **Oracle Fee**: 1% (100/100000) - To oracle data providers
+- **Official Fee**: 0.2% (200/100000) - To platform
+- **Liquidity Fee**: 0.15% (150/100000) - To liquidity providers
+- **Oracle Fee**: 0.1% (100/100000) - To oracle data providers
 - **Lucky Fee**: 0.075% (75/100000) - To lottery pool
 - **Creator Fee**: 0.075% (75/100000) - To market creator
 
 Users holding ELF NFTs enjoy a 50% fee discount.
 
-## Workflows
+## 🔄 Workflows
 
 ### 1. Market Creation Flow
 
@@ -230,7 +230,7 @@ Withdraw funds from Aave
 Calculate yields and update pool balance
 ```
 
-## Technical Details
+## 🔧 Technical Details
 
 ### Contract Version
 - Solidity: ^0.8.26
@@ -256,7 +256,7 @@ MinimumProfit = 10000             // Minimum profit
 3. **Initialization Protection**: Uses isInitialize flag to prevent re-initialization
 4. **Zero Amount Check**: Critical operations check for zero amount inputs
 
-## Usage Guide
+## 🚀 Usage Guide
 
 ### Creating a Market
 
@@ -297,22 +297,7 @@ The following market types (MarketType) are supported:
 - Tech
 - Weather
 
-## Fee Structure
-
-### Market Creation Fee
-Guarantee amount calculated based on expected virtual liquidity, formula:
-```
-guaranteeAmount = 10 * (expectVirtualAmount / currentVirtualAmount + 1) * 10^decimals
-```
-
-### Trading Fees
-- Buy: Pay 0.6% of total amount as fee
-- Sell: Fee calculated based on sold shares
-
-### Liquidity Fees
-- Add liquidity: No fee
-
-## Risk Warnings
+## ⚠️ Risk Warnings
 
 1. **Smart Contract Risk**: Code may contain vulnerabilities, use with caution
 2. **Oracle Risk**: Results depend on oracle data providers, errors may occur
@@ -320,7 +305,7 @@ guaranteeAmount = 10 * (expectVirtualAmount / currentVirtualAmount + 1) * 10^dec
 4. **Aave Risk**: Using Aave protocol involves smart contract and liquidation risks
 5. **Market Risk**: Prediction markets inherently have price volatility risks
 
-## Development Information
+## 📁 Development Information
 
 ### Project Structure
 
@@ -333,7 +318,7 @@ contracts/
 │   ├── AroundUIHelper.sol
 │   ├── AroundRouter.sol
 │   ├── LuckyPool.sol
-│   └── InsurancePool.sol
+│   └── 
 ├── oracle/            # Oracle contracts
 │   └── EchoOptimisticOracle.sol
 ├── interfaces/        # Interface definitions
@@ -343,14 +328,14 @@ contracts/
 ├── nft/              # NFT related
 ```
 
-## License
+## 📄 License
 
 GPL-3.0
 
-## Warning
+## ⚠️ Warning
 It is hereby stated that any third party not authorized by the author of this project, who uses this code for commercial purposes and generates corresponding profits, is required to pay at least 20% of the profits to the author of this project, namely **VineFiLabs**.
 
-## Contact
+## 📬 Contact
 
 This is the public repository of VineFi LABS.
 
